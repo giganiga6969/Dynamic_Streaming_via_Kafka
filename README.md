@@ -4,20 +4,6 @@
 
 ---
 
-## 📖 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Configuration](#configuration)
-- [API Documentation](#api-documentation)
-- [Troubleshooting](#troubleshooting)
-- [Team & Credits](#team--credits)
-
----
-
 ## 🎯 Overview
 
 This project implements a **distributed event streaming system** where:
