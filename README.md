@@ -339,8 +339,8 @@ kafka-streaming-project/
 ## 👥 Team & Credits
 
 **Project:** Kafka Dynamic Content Streaming System  
-**Team Members:** [yush Mittal, Ayush Sehgal, Chetana Vijaykumar, Dhriti Jamdagni  
-**Created:** November 2025
+**Team Members:** Ayush Mittal, Ayush Sehgal, Chetana Vijaykumar, Dhriti Jamadagni  
+**Created:** 9th November 2025
 
 ---
 
