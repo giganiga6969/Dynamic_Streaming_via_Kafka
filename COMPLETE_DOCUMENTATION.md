@@ -621,13 +621,3 @@ tail -f /var/log/syslog | grep kafka
 
 ---
 
-## SUPPORT & CREDITS
-
-**Project:** Kafka Dynamic Content Streaming System  
-**Team:** [Your team members]  
-**Created:** November 2024  
-**Last Updated:** November 09, 2025
-
----
-
-**End of Complete Documentation**
