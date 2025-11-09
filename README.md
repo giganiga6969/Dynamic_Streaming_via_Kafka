@@ -308,31 +308,6 @@ curl http://10.214.203.13:5000/api/topics/active
 # (kafka-console-consumer can verify)
 ```
 
----
-
-## 📂 Project Structure
-
-```text
-kafka-streaming-project/
-├── app.py                     # Flask admin API + dashboard
-├── producer.py                # Data generator & Kafka producer
-├── consumer.py                # Kafka consumer with CLI
-├── templates/
-│   └── dashboard.html         # Frontend HTML/CSS/JS
-├── requirements.txt           # Python dependencies
-├── kafka_system.db            # SQLite database (auto-created)
-├── producer.log               # Producer debug log
-├── README.md                  # This file
-├── WORKFLOW.md                # Detailed workflow documentation
-├── API.md                     # Extended API reference
-├── SETUP.md                   # Detailed setup instructions
-├── DEPLOYMENT.md              # Docker & production deployment
-└── evidence/
-    ├── screenshot_dashboard.png
-    ├── screenshot_producer.png
-    ├── screenshot_consumer.png
-    └── screenshot_kafka_logs.png
-```
 
 ---
 
