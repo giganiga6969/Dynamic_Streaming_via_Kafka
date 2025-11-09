@@ -353,26 +353,8 @@ kafka-streaming-project/
 ## 👥 Team & Credits
 
 **Project:** Kafka Dynamic Content Streaming System  
-**Team Members:** [List names or IDs]  
-**Instructor:** [Instructor name]  
-**Created:** November 2024
+**Team Members:** [yush Mittal, Ayush Sehgal, Chetana Vijaykumar, Dhriti Jamdagni  
+**Created:** November 2025
 
 ---
 
-## 📄 License
-
-Educational use only. Modify and extend as needed.
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/your-feature`.
-3. Commit changes: `git commit -m "Add your feature"`.
-4. Push to branch: `git push origin feature/your-feature`.
-5. Open a pull request.
-
----
-
-**Questions?** Open an issue or contact the team.
