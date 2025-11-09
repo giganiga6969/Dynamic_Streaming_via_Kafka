@@ -4,18 +4,6 @@
 
 ---
 
-## TABLE OF CONTENTS
-1. [Project Overview](#project-overview)
-2. [Quick Start](#quick-start)
-3. [Architecture](#architecture)
-4. [Detailed Setup](#detailed-setup)
-5. [Complete Workflow](#complete-workflow)
-6. [API Reference](#api-reference)
-7. [Troubleshooting](#troubleshooting)
-8. [File Structure](#file-structure)
-
----
-
 ## PROJECT OVERVIEW
 
 **A distributed real-time event streaming system using Apache Kafka, SQLite, and Flask.**
