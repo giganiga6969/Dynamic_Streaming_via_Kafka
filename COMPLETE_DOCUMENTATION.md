@@ -621,3 +621,11 @@ tail -f /var/log/syslog | grep kafka
 
 ---
 
+
+## 👥 Team & Credits
+
+**Project:** Kafka Dynamic Content Streaming System  
+**Team Members:** Ayush Mittal, Ayush Sehgal, Chetana Vijaykumar, Dhriti Jamadagni  
+**Created:** 9th November 2025
+
+---
