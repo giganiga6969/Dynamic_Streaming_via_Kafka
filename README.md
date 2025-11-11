@@ -311,10 +311,9 @@ curl http://10.214.203.13:5000/api/topics/active
 
 ---
 
-## 👥 Team & Credits
+## 👥Credits
 
-**Project:** Kafka Dynamic Content Streaming System  
-**Team Members:** Ayush Mittal, Ayush Sehgal, Chetana Vijaykumar, Dhriti Jamadagni  
+**Project:** Kafka Dynamic Content Streaming System   
 **Created:** 9th November 2025
 
 ---
