@@ -28,54 +28,17 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ===================================================
-#  Random Data Generator
+#  Random Data Generator (Modified)
 # ===================================================
 class RandomDataGenerator:
-    """Generate realistic structured data for different topic types."""
+    """Generate fixed message instead of random data."""
 
     @staticmethod
     def generate(topic_type):
-        if topic_type == 'sensor':
-            return {
-                'sensor_id': f'sensor_{random.randint(1,100)}',
-                'temperature': round(random.uniform(20, 40), 2),
-                'humidity': random.randint(30, 90),
-                'pressure': round(random.uniform(950, 1050), 2),
-                'timestamp': datetime.now().isoformat()
-            }
-        elif topic_type == 'user_activity':
-            return {
-                'user_id': f'user_{random.randint(1,1000)}',
-                'action': random.choice(['login', 'logout', 'click', 'purchase']),
-                'page': f'/page/{random.randint(1,50)}',
-                'duration': random.randint(1, 300)
-            }
-        elif topic_type == 'logs':
-            return {
-                'service': random.choice(['auth', 'api', 'db', 'cache']),
-                'level': random.choice(['INFO', 'WARN', 'ERROR']),
-                'message': f'Log entry #{random.randint(100, 999)}',
-                'response_time_ms': random.randint(10, 500)
-            }
-        elif topic_type == 'payments':
-            return {
-                'transaction_id': str(uuid.uuid4()),
-                'amount': round(random.uniform(5, 500), 2),
-                'currency': random.choice(['USD', 'EUR', 'INR']),
-                'method': random.choice(['card', 'upi', 'wallet'])
-            }
-        elif topic_type == 'weather':
-            return {
-                'city': random.choice(['Bangalore', 'NYC', 'London', 'Tokyo']),
-                'temperature': random.randint(-5, 45),
-                'condition': random.choice(['sunny', 'rainy', 'cloudy'])
-            }
-        else:
-            return {
-                'id': str(uuid.uuid4()),
-                'value': random.randint(1, 1000),
-                'timestamp': datetime.now().isoformat()
-            }
+        return {
+            "message": "Connected to the Producer",
+            "timestamp": datetime.now().isoformat()
+        }
 
 # ===================================================
 #  Admin API Client
@@ -174,7 +137,7 @@ class ProducerSystem:
                 topic_name = random.choice(topics)
                 self.create_topic_if_not_exists(topic_name)
 
-                # Infer type
+                # Infer type (kept for structure)
                 lower = topic_name.lower()
                 if 'sensor' in lower:
                     topic_type = 'sensor'
@@ -213,7 +176,7 @@ class ProducerSystem:
                 topic = msg['topic']
                 self.producer.send(topic, value=msg)
                 self.producer.flush()
-                logger.info(f"✅ Published to {topic}: {msg['data_type']}")
+                logger.info(f"✅ Published to {topic}: {msg['payload']['message']}")
             except queue.Empty:
                 continue
             except Exception as e:
@@ -268,3 +231,4 @@ class ProducerSystem:
 if __name__ == '__main__':
     system = ProducerSystem()
     system.start()
+
